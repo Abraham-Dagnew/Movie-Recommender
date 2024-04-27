@@ -1,16 +1,13 @@
-// Scroll to top button functionality
 const myButton = document.getElementById("gotopBtn");
 window.onscroll = () => myButton.style.display = (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) ? "block" : "none";
 function topFunction() { document.documentElement.scrollTop = 0; }
 
-// TMDb API variables
 const API_KEY = 'api_key=988e17afa010ca134f38ace964916dd5';
 const BASE_URL = 'https://api.themoviedb.org/3';
 const API_URL = `${BASE_URL}/discover/movie?sort_by=popularity.desc&${API_KEY}`;
 const IMG_URL = 'https://image.tmdb.org/t/p/w500';
 const genresURL = `${BASE_URL}/genre/movie/list?${API_KEY}`;
 
-// Fetch movie genres
 function fetchGenres() {
     fetch(genresURL)
     .then(response => response.json())
@@ -29,7 +26,6 @@ function fetchGenres() {
     });
 }
 
-// Fetch movies and display them
 function fetchAndDisplayMovies(url) {
     fetch(url)
     .then(response => response.json())
@@ -51,18 +47,15 @@ function fetchAndDisplayMovies(url) {
     });
 }
 
-// Set up initial movie display and genres
 fetchAndDisplayMovies(API_URL);
 fetchGenres();
 
-// Function to set color based on rating
 function setColor(vote) {
     if (vote >= 7.5) return "green";
     else if (vote >= 5) return "orange";
     else return 'red';
 }
 
-// Form submission handling for search
 document.getElementById("form").addEventListener("submit", event => {
     event.preventDefault();
     const searchTerm = document.getElementById("search").value.trim();

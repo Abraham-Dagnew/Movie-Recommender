@@ -15,7 +15,6 @@ function fetchGenres() {
         const genres = data.genres;
         const tagsEl = document.getElementById("tags");
         tagsEl.innerHTML = genres.map(genre => `<div class="tag" id="${genre.id}">${genre.name}</div>`).join('');
-        // Add event listeners to genre tags
         tagsEl.querySelectorAll('.tag').forEach(tag => {
             tag.addEventListener("click", () => {
                 const selectedGenre = tag.id;

@@ -18,5 +18,5 @@ This is a simple, interactive web application that provides personalized movie r
 ## Tech Stack
 
 - **Frontend**: HTML, CSS, JavaScript  
-- **API**: IMDb API from RAPIDAPI  
+- **API**: IMDb APi from RAPIDAPI  
   

@@ -10,7 +10,7 @@ This is a simple, interactive web application that provides personalized movie r
 - **Search Movies**: Look up movies by title and get detailed information like plot, genre, release year, and ratings.
 - **Recommendations**: Receive movie recommendations based on user-selected preferences or a specific movie.
 - **Responsive Design**: clean, mobile-friendly interface.
-- **Data Fetching**: Real-time movie data fetched directly from the IMDB API.
+- **Data Fetching**: Real-time movie data fetched directly from the IMDB APi.
   
 
 ---

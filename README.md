@@ -1,6 +1,5 @@
 # Movie Recommender Web App
 
-Welcome to the **Movie Recommender Web App**!  
 This is a simple, interactive web application that provides personalized movie recommendations using the IMDb APi powered by RapidAPI. With a clean and responsive user interface, this app is built with **HTML**, **CSS**, and **Javascript** to ensure a seamless user experience.
 
 ---
